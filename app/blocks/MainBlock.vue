@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
     import Container from "~/sheared/ui/Container.vue"
-    import DefaultButton from "~/sheared/DefaultButton.vue"
+    import DefaultButton from "~/sheared/ui/DefaultButton.vue"
     import GlassCard from "~/sheared/ui/GlassCard.vue"
     import stars from "~/assets/imgs/cards/stars.svg"
     import progressBar from "~/assets/imgs/cards/progress-bar.svg"
@@ -22,7 +22,7 @@
 
         <div class="flex flex-col items-center">
             <DefaultButton>Смотреть демо</DefaultButton>
-                <div class="relative flex w-full h-308">
+            <div class="relative flex w-full h-308">
                 <GlassCard class="absolute w-82 h-82 left-10 top-[-32px]">
                     <template #title>
                         Установка<br/>за 2 дня

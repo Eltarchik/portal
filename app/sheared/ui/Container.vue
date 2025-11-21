@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
-    import Header from  "@/sheared/ui/Header.vue"
-    import Text from "~/sheared/ui/Text.vue"
+    import Header from "~/sheared/ui/text/Header.vue"
+    import Text from "~/sheared/ui/text/Text.vue"
 
 </script>
 
@@ -11,7 +11,7 @@
             <Header class="text-center">
                 <slot name="title" />
             </Header>
-            <Text>
+            <Text class="text-center">
                 <slot name="description" />
             </Text>
         </div>

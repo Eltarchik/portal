@@ -7,7 +7,7 @@
 </script>
 
 <template>
-    <div class="flex flex-col gap-2 p-8 rounded-[32px] glass overflow-hidden">
+    <div class="flex flex-col gap-2 p-8 rounded-[24px] bg-gray-80 overflow-hidden border-1 border-white/8">
         <Header :size="HeaderSize.SMALL" v-if="$slots.title">
             <slot name="title" />
         </Header>

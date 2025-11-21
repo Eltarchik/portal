@@ -13,7 +13,7 @@
     <p :class="[
             small ? 'text-[16px]' : 'text-[20px]',
             fat ? 'font-semibold' : 'font-medium',
-            'text-gray-30'
+            'text-gray-30', 'cursor-default'
         ]"
     >
         <slot />
