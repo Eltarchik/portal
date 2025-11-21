@@ -6,8 +6,13 @@
 </script>
 
 <template>
-    <button class="flex justify-center content-center h-19 px-6 bg-white/8 rounded-[32px]">
-        <Header :size="HeaderSize.MEDIUM"></Header>
+    <button class="flex justify-center items-center pb-1 h-19 px-6
+                  bg-white/8 rounded-[32px] border-1 border-white/8
+                  cursor-pointer"
+    >
+        <Header :size="HeaderSize.SMALL" class="h-fit">
+            <slot />
+        </Header>
     </button>
 </template>
 
