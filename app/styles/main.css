@@ -23,7 +23,7 @@
 @layer components {
     .glass {
         @apply bg-black/5 backdrop-blur-[12px] backdrop-saturate-[180%];
-        @apply shadow-[inset_8px_2px_48px_rgba(0,0,0,0.8),inset_-8px_-2px_32px_rgba(255,255,255,0.16),0_32px_64px_rgba(0,0,0,0.15)];
+        @apply shadow-[inset_8px_4px_48px_rgba(0,0,0,0.8),inset_-8px_-2px_32px_rgba(255,255,255,0.16),0_32px_64px_rgba(0,0,0,0.15)];
         @apply border-x-1 border-x-white/60;
     }
 }
