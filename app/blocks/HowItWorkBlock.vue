@@ -4,7 +4,8 @@
     import PortalText from "~/sheared/ui/text/PortalText.vue"
     import Header, {HeaderSize} from "~/sheared/ui/text/Header.vue"
     import GlassCard from "~/sheared/ui/GlassCard.vue"
-    import DefaultCard from "~/sheared/DefaultCard.vue";
+    import DefaultCard from "~/sheared/DefaultCard.vue"
+    import help from "~/assets/imgs/cards/help.svg"
 
 </script>
 
@@ -18,28 +19,31 @@
         <div class="flex flex-col items-center gap-20">
             <div class="grid grid-cols-3 gap-6 w-full">
                 <GlassCard class="col-span-1 h-80">
-                    <template #title>Адын<br/> Захват номера</template>
+                    <template #title><b class="text-[60px]/[]">I</b><br/> Захват номера</template>
                     <template #description>
                         Камера фиксирует номер авто.<br/>
                         ИИ-модель распознает номер в любых условиях.<br/>
                         Система отправляет данные на сервер
                     </template>
+                    <img :src="help" alt="" width="400" class="absolute min-w-100 left-0 top-58 blur-[12px]">
                 </GlassCard>
                 <GlassCard class="col-span-1 h-80">
-                    <template #title>Два<br/> Проверка и допуск</template>
+                    <template #title><b class="text-[60px]">II</b><br/> Проверка и допуск</template>
                     <template #description>
                         Номер проверяется в базе жильцов.<br/>
                         Шлагбаум автоматически открывается.<br/>
                         История всех проездов записывается
                     </template>
+                    <img :src="help" alt="" width="400" class="absolute min-w-100 left-[-32px] top-60 blur-[12px] rotate-8">
                 </GlassCard>
                 <GlassCard class="col-span-1 h-80">
-                    <template #title>Тыри<br/> Аналитика и управление</template>
+                    <template #title><b class="text-[60px]">III</b><br/> Аналитика и управление</template>
                     <template #description>
                         Администратор видит все машины двора.<br/>
                         Контролирует въезды/выезды, добавляет авто в чёрный список.<br/>
                         Получает статистику по гостям
                     </template>
+                    <img :src="help" alt="" width="400" class="absolute min-w-100 left-[-16px] top-64 blur-[12px] rotate-4 z-[-10]">
                 </GlassCard>
             </div>
 

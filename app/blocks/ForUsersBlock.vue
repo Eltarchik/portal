@@ -6,6 +6,10 @@
     import Text from "~/sheared/ui/text/Text.vue"
     import StarIcon from "~/sheared/ui/icons/StarIcon.vue"
     import DefaultCard from "~/sheared/DefaultCard.vue"
+    import cars from "~/assets/imgs/cards/cars.svg"
+    import worker from "~/assets/imgs/cards/worker.svg"
+    import phone from "~/assets/imgs/cards/phone.svg"
+    import map from "~/assets/imgs/cards/map.svg"
 
 </script>
 
@@ -23,31 +27,35 @@
                 <Text fat class="text-white">Какие проблемы решает Портал?</Text>
             </Chip>
             <div class="grid grid-cols-[24%_24%_18%_28%] grid-rows-[400px_400px] gap-6 w-full">
-                <DefaultCard class="col-span-2">
+                <DefaultCard class="relative col-span-2">
                     <template #title>Посторонние автомобили</template>
                     <template #description>
                         Нет свободных мест для своих авто во дворе
                     </template>
+                    <img :src="cars" alt="" class="absolute left-0 w-full bottom-0">
                 </DefaultCard>
-                <DefaultCard class="col-span-2">
+                <DefaultCard class="relative col-span-2">
                     <template #title>Отсутствие безопасности</template>
                     <template #description>
                         Отсутствие контроля въезда, риск проникновений и краж
                     </template>
+                    <img :src="worker" alt="" class="absolute right-10 bottom-10">
                 </DefaultCard>
 
-                <DefaultCard class="col-span-3">
+                <DefaultCard class="relative col-span-3">
                     <template #title>Неудобный процесс</template>
                     <template #description>
                         Сложности с приглашением гостей, звонки охране
                     </template>
+                    <img :src="phone" alt="" class="absolute right-[-32px] bottom-[-16px]">
                 </DefaultCard>
-                <DefaultCard class="col-span-1">
+                <DefaultCard class="relative col-span-1">
                     <template #title>Непрозрачность</template>
                     <template #description>
                         Нет информации о машинах<br/>
                         на территории
                     </template>
+                    <img :src="map" alt="" class="absolute self-center bottom-4">
                 </DefaultCard>
             </div>
         </div>

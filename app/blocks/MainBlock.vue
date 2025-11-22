@@ -8,6 +8,8 @@
     import analytic from "~/assets/imgs/cards/analytic.svg"
     import bloom from "~/assets/imgs/cards/bloom.svg"
     import help from "~/assets/imgs/cards/help.svg"
+    import circles from "~/assets/imgs/circles.svg"
+    import phones from "~/assets/imgs/phones.svg"
 
 </script>
 
@@ -23,6 +25,9 @@
         <div class="flex flex-col items-center">
             <DefaultButton>Смотреть демо</DefaultButton>
             <div class="relative flex w-full h-308">
+                <img :src="circles" alt="" width="880px" class="absolute right-[-120px] top-[-20px]">
+                <img :src="phones" alt="" class="absolute right-[-40px] top-[-52px]">
+
                 <GlassCard class="absolute w-82 h-82 left-10 top-[-32px]">
                     <template #title>
                         Установка<br/>за 2 дня
