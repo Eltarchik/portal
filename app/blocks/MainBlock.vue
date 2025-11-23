@@ -25,8 +25,8 @@
         <div class="flex flex-col items-center">
             <DefaultButton>Смотреть демо</DefaultButton>
             <div class="relative flex w-full h-308">
-                <img :src="circles" alt="" width="880px" class="absolute right-[-120px] top-[-20px]">
-                <img :src="phones" alt="" class="absolute right-[-40px] top-[-52px]">
+                <img :src="circles" alt="" width="880px" class="absolute right-[-120px] top-[-20px] pointer-events-none">
+                <img :src="phones" alt="" class="absolute right-[-40px] top-[-52px] pointer-events-none">
 
                 <GlassCard class="absolute w-82 h-82 left-10 top-[-32px]">
                     <template #title>
